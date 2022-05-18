@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="sikilat_driver_view_tree" model="ir.ui.view">
+        <field name="name">sikilat.driver.view.tree</field>
+        <field name="model">sikilat.driver</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name" />
+                <field name="driver_license_type" />
+                <field name="driver_license_expiry_date" />
+                <field name="partner_id" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="sikilat_driver_view_form" model="ir.ui.view">
+        <field name="name">sikilat.driver.view.form</field>
+        <field name="model">sikilat.driver</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <div class="oe_title">
+                        <div class="oe_edit_only">
+                            <label for="name"/>
+                        </div>
+                        <h1 class="mb32">
+                            <field name="name" class="mb16"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="driver_license_type" />
+                        <field name="driver_license_expiry_date" />
+                        <field name="partner_id" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sikilat_driver_action" model="ir.actions.act_window">
+        <field name="name">Sikilat Driver</field>
+        <field name="res_model">sikilat.driver</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

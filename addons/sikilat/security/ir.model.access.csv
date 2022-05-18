@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+sikilat.access_sikilat_vehicle,access_sikilat_vehicle,sikilat.model_sikilat_vehicle,base.group_user,1,1,1,1
+sikilat.access_sikilat_driver,access_sikilat_driver,sikilat.model_sikilat_driver,base.group_user,1,1,1,1
+sikilat.access_sikilat_delivery,access_sikilat_delivery,sikilat.model_sikilat_delivery,base.group_user,1,1,1,1

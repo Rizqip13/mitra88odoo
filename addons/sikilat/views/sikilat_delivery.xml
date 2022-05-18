@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="sikilat_delivery_view_tree" model="ir.ui.view">
+        <field name="name">sikilat.delivery.view.tree</field>
+        <field name="model">sikilat.delivery</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="customer" />
+                <field name="driver_name" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="sikilat_delivery_view_form" model="ir.ui.view">
+        <field name="name">sikilat.delivery.view.form</field>
+        <field name="model">sikilat.delivery</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <div class="oe_title">
+                        <!-- <div class="oe_edit_only">
+                            <label for="Customer"/>
+                        </div> -->
+                        <h1 class="mb32">
+                            <field name="customer" class="mb16"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="driver_name" />
+                        <field name="vehicle_id" />
+                        <field name="state" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sikilat_delivery_action" model="ir.actions.act_window">
+        <field name="name">Sikilat Delivery</field>
+        <field name="res_model">sikilat.delivery</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

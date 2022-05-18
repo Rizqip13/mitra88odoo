@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Top menu item -->
+    <menuitem id="sikilat_menu_root" name="Sikilat">
+        <menuitem
+            id="sikilat_delivery_menu"
+            name="Delivery"
+            action="sikilat_delivery_action"/>
+        <menuitem
+            id="sikilat_vehicle_menu"
+            name="Vechicle"
+            action="sikilat_vehicle_action"/>
+        <menuitem
+            id="sikilat_driver_menu"
+            name="Driver"
+            action="sikilat_driver_action"/>
+        <!-- <menuitem id="sikilat_vehicle_menu" name="Vehicle" action="sikilat_vehicle_action"/>
+        <menuitem id="sikilat_first_level_menu" name="First Level">
+            <menuitem id="sikilat_model_menu_action" action="sikilat_driver_action"/>
+        </menuitem> -->
+    </menuitem>
+</odoo>
